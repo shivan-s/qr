@@ -20,6 +20,14 @@
     });
   </script>
   <style>
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
     body {
       display: flex;
       flex-direction: column;
@@ -29,11 +37,18 @@
       justify-content: center;
       align-items: center;
       background: azure;
+      animation: fadeIn 1s;
     }
+
     #qrcode {
       padding: 1rem;
       border: 2px darkgray double;
       background: snow;
+    }
+
+    #qrcode:hover {
+      box-shadow: 0.25em 0.25rem 1.5rem black;
+      transition-duration: 0.5s;
     }
   </style>
 </html>
