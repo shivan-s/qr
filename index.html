@@ -1,54 +1,59 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shivan's QR Code</title>
-  </head>
-  <body>
-    <div id="qrcode"></div>
-    <a href="https://shivan.xyz">shivan.xyz</a>
-  </body>
-  <script type="text/javascript" src="qrcode.min.js"></script>
-  <script type="text/javascript">
-    new QRCode(document.getElementById("qrcode"), {
-      text: "https://shivan.xyz",
-      width: 240,
-      height: 240,
-      colorDark: "#000000",
-      colorLight: "#ffffff",
-    });
-  </script>
-  <style>
-    @keyframes fadeIn {
-      0% {
-        opacity: 0;
-      }
-      100% {
-        opacity: 1;
-      }
-    }
-    body {
-      display: flex;
-      flex-direction: column;
-      gap: 2em;
-      min-height: 100vh;
-      min-width: 100vw;
-      justify-content: center;
-      align-items: center;
-      background: azure;
-      animation: fadeIn 1s;
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WHOIS Shivan?</title>
+</head>
+
+<body>
+  <div id="qrcode"></div>
+  <a href="https://shivan.xyz/about">WHOIS Shivan?</a>
+</body>
+<script type="text/javascript" src="qrcode.min.js"></script>
+<script type="text/javascript">
+  new QRCode(document.getElementById("qrcode"), {
+    text: "https://shivan.xyz/about",
+    width: 240,
+    height: 240,
+    colorDark: "#000000",
+    colorLight: "#ffffff",
+  });
+</script>
+<style>
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
     }
 
-    #qrcode {
-      padding: 1rem;
-      border: 2px darkgray double;
-      background: snow;
+    100% {
+      opacity: 1;
     }
+  }
 
-    #qrcode:hover {
-      box-shadow: 0.25em 0.25rem 1.5rem black;
-      transition-duration: 0.5s;
-    }
-  </style>
+  body {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    min-height: 100vh;
+    min-width: 100vw;
+    justify-content: center;
+    align-items: center;
+    background: azure;
+    animation: fadeIn 1s;
+  }
+
+  #qrcode {
+    padding: 1rem;
+    border: 2px darkgray double;
+    background: snow;
+  }
+
+  #qrcode:hover {
+    box-shadow: 0.25em 0.25rem 1.5rem black;
+    transition-duration: 0.5s;
+  }
+</style>
+
 </html>
